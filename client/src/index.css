@@ -1,0 +1,57 @@
+/* Fonts: UI = Inter, Headings = Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600&display=swap');
+
+/* Tailwind v4 entry */
+@import "tailwindcss";
+
+/* Tailwind v4 theme tokens (usable as bg-brand-500, text-accent-500, font-[var(--font-ui)], etc.) */
+@theme {
+  /* Fonts */
+  --font-heading: "Poppins", sans-serif;
+  --font-ui: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+  /* NovaDraft brand palette */
+  --color-brand-50:  #f3f8ff;
+  --color-brand-100: #e3efff;
+  --color-brand-200: #c1daff;
+  --color-brand-300: #99c0ff;
+  --color-brand-400: #6ba1ff;
+  --color-brand-500: #3b7dff; /* primary */
+  --color-brand-600: #2f63d6;
+  --color-brand-700: #244cab;
+  --color-brand-800: #1b377f;
+  --color-brand-900: #14285e;
+
+  /* Accent (jade) */
+  --color-accent-500: #00b894;
+
+  /* If something in code still uses `bg-primary`, keep a compatible token */
+  --color-primary: #3b7dff;
+}
+
+/* Global font defaults */
+html, body {
+  font-family: var(--font-ui);
+}
+
+/* Optional helpers for quick typography usage */
+.h1 {
+  font-family: var(--font-heading);
+  /* Tailwind utilities via @apply still work in v4 */
+  @apply text-4xl sm:text-5xl font-semibold tracking-tight;
+}
+
+.body {
+  font-family: var(--font-ui);
+}
+
+/* If you previously forced Outfit everywhere, remove it.
+   Keeping a generic reset helper you had: */
+.reset-tw, .reset-tw * {
+  all: revert !important;
+}
+
+/* Clerk drawer over app chrome */
+.cl-drawerRoot {
+  z-index: 10;
+}
