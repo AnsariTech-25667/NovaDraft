@@ -1,0 +1,46 @@
+{
+  "name": "novadraft-server",
+  "version": "1.0.0",
+  "description": "NovaDraft backend (Express 5). AI routes, PDF parsing, image uploads, Clerk auth, and Neon serverless PostgreSQL.",
+  "author": "Maaz Ansari",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "main": "index.js",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "lint": "echo \"No server linter configured\" && exit 0"
+  },
+  "keywords": [
+    "express",
+    "ai",
+    "openai",
+    "pdf",
+    "cloudinary",
+    "clerk",
+    "neon",
+    "serverless",
+    "novadraft"
+  ],
+  "dependencies": {
+    "@clerk/express": "^1.7.4",
+    "@neondatabase/serverless": "^1.0.1",
+    "axios": "^1.10.0",
+    "cloudinary": "^2.7.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^5.1.0",
+    "helmet": "^7.1.0",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "openai": "^5.8.2",
+    "pdf-parse": "^1.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
