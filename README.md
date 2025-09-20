@@ -57,7 +57,7 @@ NovaDraft is built as a **layered, modular system**:
 4. **Media Layer**: Cloudinary processes uploads and serves optimized media globally.
 5. **Auth**: Clerk ensures only authenticated, plan-verified users access endpoints.
 
-This architecture is **scalable, secure, and cloud-ready**, making NovaDraft more than a demo — it’s SaaS-production capable.
+This architecture is **scalable, secure, and cloud-ready**, making NovaDraft more than a demo it’s SaaS-production capable.
 
 ---
 
