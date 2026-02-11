@@ -6,7 +6,7 @@ GitHub: https://github.com/AnsariTech-25667
 
 NovaDraft is a full-stack AI productivity platform designed to supercharge content creation and media workflows. It unifies AI text generation, image creation, background/object removal, resume reviews, and export workflows into one cohesive suite.
 
-Architected with scalability and modern SaaS best practices, NovaDraft demonstrates how to integrate LLMs, serverless databases, cloud media pipelines, and authentication layers into a production-ready AI platform.
+Architected with scalability and modern SaaS best practices, NovaDraft demonstrates how to integrate LLMs, serverless databases, and cloud media pipelines into a production-grade AI application.
 
 🚀 Product Overview
 
@@ -22,11 +22,11 @@ Indie founders
 
 Small businesses
 
-To generate high-quality text and visuals — without switching tools.
+To generate high-quality text and visuals — without switching between tools.
 
 🧠 Project Motivation / Problem Statement
 
-Content creators and professionals often struggle with fragmented workflows:
+Content workflows are fragmented:
 
 Writing tools separate from image tools
 
@@ -34,125 +34,99 @@ Resume analyzers separate from content platforms
 
 Multiple subscriptions and disconnected data
 
-NovaDraft solves this by centralizing everything into one AI-native workspace.
+NovaDraft centralizes everything into one AI-native workspace.
 
 Users can:
 
 Generate blog titles and long-form articles instantly
 
-Create marketing images without design expertise
+Create marketing visuals without design skills
 
 Remove backgrounds or objects from images
 
-Receive AI-powered resume feedback
+Get AI-powered resume feedback
 
 Export and publish directly
 
-This project demonstrates how AI + full-stack engineering eliminates friction and boosts productivity.
+This project proves how AI + full-stack engineering removes friction and increases productivity.
 
 ✨ Key Features & Benefits
 
-Smart AI Writing Tools – Blog titles, articles, resume reviews via modern LLMs
+Smart AI Writing Tools (blog, articles, resume review)
 
-AI Image Powerhouse – Generate (gpt-image-1), edit, and transform images
+AI Image Generation & Editing (gpt-image-1)
 
-Persistent History & Analytics – Stored securely in Neon (Postgres)
+Persistent History via Neon PostgreSQL
 
-Plan-Aware Limits – SaaS monetization hooks built-in
+Plan-Based Usage Limits (SaaS ready)
 
-Secure Authentication – Clerk-managed sessions
+Clerk Authentication
 
-Cloud Media Pipeline – Cloudinary CDN optimization
+Cloudinary CDN Media Pipeline
 
-Full SaaS Architecture – Scalable, production-ready system
+Scalable Express API architecture
 
 🖥 UI Showcase
 🔹 Writing Workspace
 
-Modern distraction-free editor with AI-assisted writing, generation tools, and workspace layout.
-
-🔹 AI Editor Interface
-
-Clean, modular editing environment with real-time AI responses.
+🔹 Editor Interface
 
 🔹 Command Palette
 
-Power-user command interface for fast navigation and tool access.
-
 🔹 Workspace Settings
 
-User-level configuration for plan limits, preferences, and environment customization.
-
-🔹 Setup Flow
-
-Onboarding and environment configuration for secure AI usage.
+🔹 Setup Page
 
 🔹 Activity Dashboard
 
-Track generated content, images, and usage history in a centralized dashboard.
-
 🔹 Export & Publish
 
-Seamless export workflow for publishing content.
+⚠️ This filename contains &, so it must be encoded as %26.
 
 🔹 Export Workflow (Advanced View)
 
-Enhanced publishing options and structured output management.
-
 🏗 System Design
 
-NovaDraft follows a layered, modular SaaS architecture:
+NovaDraft follows a layered architecture:
 
-Client (React) → API Layer (Express) → Neon (Postgres) + LLM Models + Cloudinary
+Client (React) → API Layer (Express) → Neon (Postgres) + LLM + Cloudinary
 
 Architecture Diagram
 
 Layer Breakdown
 
-Frontend (React + Vite)
-Handles UI, state management, and Clerk auth flows.
+React + Vite frontend
 
-API Layer (Express 5)
-Proxies LLM requests, enforces plan limits, logs activity.
+Express 5 backend
 
-Database (Neon PostgreSQL)
-Stores prompts, outputs, metadata, usage history.
+Neon serverless PostgreSQL
 
-Media Layer (Cloudinary)
-Upload handling, transformations, CDN delivery.
+Cloudinary media pipeline
 
-Authentication (Clerk)
-Secure session management and subscription enforcement.
+Clerk authentication
 
-This makes NovaDraft:
+LLM integration (text + image)
 
-Horizontally scalable
-
-Cloud-native
-
-Secure
-
-Monetization-ready
+Scalable. Stateless. Cloud-ready.
 
 ⚡ Performance & Scaling
 
-NovaDraft is engineered for cost-efficient performance:
+Serverless Neon DB handles concurrency
 
-Serverless Neon DB → Handles high concurrency without connection pooling headaches
+Cloudinary CDN reduces global latency
 
-Cloudinary CDN → Edge caching + transformation acceleration
+Stateless APIs scale horizontally
 
-Stateless Express APIs → Horizontal scaling ready
+Plan-based rate limiting controls AI cost
 
-Plan-Based Rate Limiting → Prevents AI cost spikes
+Vite bundling minimizes frontend payload
 
-Optimized Frontend Bundles → Vite + Tailwind minimal payload
+Token-efficient prompts reduce spend
 
-Token-Efficient Prompts → Controlled AI spend
-
-⚠️ Heavy free usage can spike AI costs — but the architecture already supports billing integrations (e.g., Stripe).
+The system is SaaS-ready and billing-compatible (Stripe-ready architecture).
 
 🛠 Tech Stack
+
 Frontend
 
 React
@@ -169,11 +143,9 @@ Express 5
 
 Database
 
-Neon (Serverless PostgreSQL)
+Neon PostgreSQL
 
 AI
-
-OpenAI client configured for:
 
 gemini-2.0-flash (text)
 
@@ -181,7 +153,7 @@ gpt-image-1 (image)
 
 Cloud
 
-Cloudinary (image hosting + transformations)
+Cloudinary
 
 Auth
 
@@ -200,18 +172,15 @@ Prerequisites
 
 Node.js >= 18
 
-Yarn or npm
-
 Neon/Postgres DATABASE_URL
 
 Clerk keys
 
 Cloudinary keys
 
-LLM API key (OPENAI_API_KEY / GEMINI_API_KEY)
+OPENAI_API_KEY or GEMINI_API_KEY
 
 Setup
-# Clone repo
 git clone https://github.com/AnsariTech-25667/NovaDraft.git
 
 # Backend
@@ -227,21 +196,9 @@ npm install
 npm run dev
 
 
-Open:
+Frontend runs on:
 
 http://localhost:5173
-
-📦 Deployment
-
-NovaDraft is:
-
-Serverless-ready
-
-CI/CD friendly
-
-Vercel / Render / Railway compatible
-
-Cloud-native by design
 
 📄 License
 
