@@ -1,13 +1,15 @@
 NovaDraft — AI-Powered Writing & Image Suite
 
+A full-stack AI SaaS platform for intelligent writing, image generation, resume analysis, and publishing workflows.
+
 Author: Maaz Ansari
 Email: maazansari25667@gmail.com
 
 GitHub: https://github.com/AnsariTech-25667
 
-NovaDraft is a full-stack AI productivity platform engineered to supercharge content creation and media workflows. It unifies AI-powered writing, image generation, background/object removal, resume intelligence, and publishing workflows into one cohesive SaaS-ready platform.
+NovaDraft is a production-grade AI productivity platform engineered to streamline modern content creation and media workflows. It combines AI-powered writing, image generation, background/object removal, resume intelligence, and export tools into one unified SaaS-ready system.
 
-Architected with scalability, modularity, and modern SaaS principles, NovaDraft demonstrates how to integrate LLMs, serverless databases, secure authentication, and cloud media pipelines into a production-grade AI application.
+Built with scalability, modularity, and cloud-native architecture in mind, NovaDraft demonstrates real-world integration of LLM services, serverless infrastructure, authentication layers, and media pipelines.
 
 🚀 Product Overview
 
@@ -21,40 +23,40 @@ NovaDraft empowers:
 
 🚀 Startups & founders
 
-To generate professional-grade text and visuals without switching tools.
+To produce professional-grade text and visuals without switching between tools.
 
 🖥 UI Showcase
 🔹 Writing Workspace
 
-A clean, distraction-free AI writing environment with contextual generation tools and structured formatting.
+A distraction-free AI writing environment with contextual generation tools, structured formatting, and real-time editing workflows.
 
 🔹 Editor Interface
 
-Precision editing layer with structured formatting controls and optimized document rendering.
+Precision editing layer with rich formatting controls, visual hierarchy, and responsive document rendering.
 
 🔹 Command Palette
 
-Keyboard-first navigation system for instant AI commands and rapid workspace control.
+Keyboard-first navigation system enabling instant AI actions, document switching, and workflow acceleration.
 
 🔹 Workspace Settings
 
-Granular control over environment preferences, usage limits, and account configurations.
+Granular configuration for permissions, AI usage limits, workspace preferences, and security policies.
 
 🔹 Setup Flow
 
-Guided onboarding experience for secure AI workspace configuration.
+Guided onboarding experience for secure AI workspace initialization and configuration.
 
 🔹 Activity Dashboard
 
-Centralized activity monitoring for document history and AI interaction tracking.
+Centralized tracking of document edits, AI interactions, approvals, and workspace events.
 
 🔹 Export & Publish
 
-Flexible export options with multi-format publishing capabilities.
+Multi-format export system supporting PDF, Markdown, and HTML output with structured sharing capabilities.
 
 🔹 Export & Publish (Detailed View)
 
-Advanced publishing configurations with access controls and distribution settings.
+Advanced publishing configuration with access control, sharing permissions, and distribution settings.
 
 🏗 System Architecture
 
@@ -84,15 +86,15 @@ Plan-aware AI usage enforcement
 
 Modular service separation
 
-Scalable. Secure. SaaS-production ready.
+Scalable. Secure. Production-ready.
 
 ⚡ Performance & Scaling
 
 NovaDraft is engineered for cost-efficient scalability:
 
-Serverless Neon DB → Handles high concurrency
+Serverless Neon DB → Handles concurrency automatically
 
-Stateless Express APIs → Horizontal scaling ready
+Stateless Express APIs → Horizontally scalable
 
 Cloudinary CDN → Global media optimization
 
@@ -102,7 +104,7 @@ Optimized frontend bundles → Vite + Tailwind minimal payload
 
 Token-efficient prompts → Predictable AI billing
 
-The architecture is Stripe-compatible and billing-ready.
+The system architecture is Stripe-compatible and SaaS-monetization ready.
 
 🛠 Tech Stack
 Frontend
@@ -131,11 +133,11 @@ gpt-image-1 (image generation & editing)
 
 Cloud Infrastructure
 
-Cloudinary (media storage + transformation CDN)
+Cloudinary (media storage + CDN transformation)
 
 Authentication
 
-Clerk (secure sessions + subscription enforcement)
+Clerk (secure session handling + subscription enforcement)
 
 🧪 Local Setup
 Prerequisites
@@ -167,3 +169,21 @@ npm run dev
 Frontend runs on:
 
 http://localhost:5173
+
+🌐 Deployment
+
+Frontend → Vercel / Netlify
+
+Backend → Render / Railway / Fly.io
+
+Database → Neon
+
+Media → Cloudinary
+
+Auth → Clerk
+
+Cloud-native and horizontally scalable.
+
+📄 License
+
+MIT License
