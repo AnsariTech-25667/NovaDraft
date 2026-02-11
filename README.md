@@ -185,5 +185,3 @@ Auth → Clerk
 Cloud-native and horizontally scalable.
 
 📄 License
-
-MIT License
